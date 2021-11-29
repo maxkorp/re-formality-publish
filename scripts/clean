@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+GIT_ROOT=`git rev-parse --show-toplevel`
+REFORMALITY_ROOT=$GIT_ROOT/../re-formality
+
+cd $GIT_ROOT
+rm -rf bin src bsconfig.json package.json postinstall.js README.md
+
+cd $REFORMALITY_ROOT
+rm -rf _release
